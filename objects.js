@@ -32,8 +32,17 @@ let box =
 // Array of objects
 let boxes = 
 [
-    {heigth:2, width:5, color: "red"},
-    {heigth:1, width:6, color: "blue"}
+    {
+        heigth:2, 
+        width:5, 
+        color: "red"
+    },
+    
+    {
+        heigth:1, 
+        width:6, 
+        color: "blue"
+    }
 ]
 
 
