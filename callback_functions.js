@@ -32,3 +32,20 @@ n = calculate(6,4, function(a){
     return a*2;
 })
 
+
+// Traversing arrays
+
+let ar = [1,4,6,2,3,5]
+
+ar.forEach( element => {
+    console.log(element);
+})
+
+// Sorting array
+
+ar.sort((a ,b) => {
+    if(a>b) return -1
+
+    else return 1
+})
+
