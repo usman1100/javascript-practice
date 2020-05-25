@@ -1,28 +1,18 @@
-let newName = "";
-let lis;
+let list = document.querySelector(".points");
+let button =document.querySelector(".my_btn");
+let newItem = "";
+function addNewItem()
+{
+  let newTitle = document.querySelector("#project_title").value
+  let newLink = document.querySelector("#repo_link").value
+  newItem = document.createElement("li");
+  newItem.innerHTML = 
+  `
+  <a href="${newLink}">${newTitle}</a>
+  `;
+  list.appendChild(newItem);
 
-let button = document.querySelector(".my_btn")
+}
 
-// Changes text of the 3 li tags upon clicking the button
-button.addEventListener("click", function(){
-    newName = document.getElementById("changer").value;
-    lis = document.getElementsByTagName("li")
 
-    for(let i=0; i<lis.length; i++)
-    {
-        lis[i].innerText = newName;
-    }
-})
-
-let inputField = document.getElementById("changer")
-
-// Changes text of the 3 li tags on every keypress
-inputField.addEventListener("keypress", function(){
-    newName = document.getElementById("changer").value;
-    lis = document.getElementsByTagName("li")
-
-    for(let i=0; i<lis.length; i++)
-    {
-        lis[i].innerText = newName;
-    }
-})
+button.addEventListener("click", addNewItem)

@@ -28,3 +28,8 @@ ul.points > li{
     border-radius: 10%;
     margin: 2%;
 }
+
+.form_text{
+    font-size: 18px;
+    margin: 1%;
+}
