@@ -25,5 +25,13 @@ let StartPattern = () => {
 // Alternative to logging, it was tedious
 let printf = value => console.log(value);
 
+// Rewriting the split function
+// TODO
+let mySplit = string =>
+{
+    let words = 0;
+    for(let i=0; i<string.length; i++){
+        printf(string[i])
+    }
+}
 
-printf(Power(5,3))
