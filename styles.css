@@ -19,8 +19,8 @@ ul.points{
 }
 
 ul.points > li{
+    font-size: 20;
     text-align: left;
-    text-decoration: none;
 }
 
 
@@ -40,4 +40,8 @@ ul.points > li{
     padding: 1%;
     text-align: center;
     width: 30%;;
+}
+
+.redText{
+    color: rgb(214, 23, 23);    
 }
