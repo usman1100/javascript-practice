@@ -25,11 +25,19 @@ ul.points > li{
 
 
 .my_btn{
-    border-radius: 10%;
+    width: 100px;
+    height: 40px;
     margin: 2%;
 }
 
 .form_text{
     font-size: 18px;
     margin: 1%;
+}
+
+.addProjectSection{
+    padding: 5%;;
+    text-align: center;
+    border: 1px white solid;
+    width: 50%;;
 }
