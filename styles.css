@@ -36,8 +36,8 @@ ul.points > li{
 }
 
 .addProjectSection{
-    padding: 5%;;
+    display: inline-block;
+    padding: 1%;
     text-align: center;
-    border: 1px white solid;
-    width: 50%;;
+    width: 30%;;
 }
