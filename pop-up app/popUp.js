@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let close_btn = document.querySelector(".popup-close");
 let trigger = document.querySelector(".trigger");
 let add = document.querySelector(".popup-wrapper");
