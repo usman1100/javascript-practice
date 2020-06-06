@@ -7,18 +7,22 @@
     color: white;
     padding: 2% 5%;
     border-radius: 30px;
+    transition: 0.5s;
+}
+
+.todo-item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.527), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-
 .icon{
-    cursor: default;
+    cursor: pointer;
     transition: 0.5s;
     padding: 0 1%;
 }
 
 .icon:hover{
-    color: black;
+    transform: rotateY(360deg);
 }
 
 .message{
