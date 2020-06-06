@@ -17,7 +17,7 @@
 
 .icon{
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.25s;
     padding: 0 1%;
 }
 
@@ -30,4 +30,29 @@
     font-size: x-large;
     padding-left: 2%;
     display: inline-block;
+}
+
+
+.add-task{
+    background-color: rgb(124, 24, 124);
+    color: white;
+    padding: 2% 5%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 40px;
+}
+
+.add-button{
+    transition: 0.25s;
+}
+
+.add-button:hover{
+    cursor: pointer;
+    transform: rotateZ(360deg);
 }

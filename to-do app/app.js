@@ -1,15 +1,24 @@
-x = document.querySelector("#done")
-y = document.querySelector("#delete")
-par = x.parentElement
+let doneButtons = document.querySelectorAll("#done")
+let deleteButtons = document.querySelectorAll("#delete")
+let par = null
 
 
-x.addEventListener("click", ()=>{
-    par.style.backgroundColor = "green";
-    x.style.display = "none";
-})
 
-y.addEventListener("click", ()=>{
+doneButtons.forEach(button => {
+ button.addEventListener("click",()=>{
+        par = button.parentElement
+        par.style.backgroundColor = "green";
+        button.style.display = "none";
+ })
+});
 
-    par.style.display = "none";
-})
+
+deleteButtons.forEach(button => {
+    button.addEventListener("click",()=>{
+           par = button.parentElement
+           par.style.display = "none";
+    })
+   });
+
+
 
