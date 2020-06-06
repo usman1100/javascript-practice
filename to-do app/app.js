@@ -4,21 +4,21 @@ let addButton = document.querySelector("#taskButton")
 let par = null
 
 
-const addDoneEvents =()=> doneButtons.forEach(button => {
-       button.addEventListener("click", () => {
-              par = button.parentElement
-              par.style.backgroundColor = "green";
-              button.style.display = "none";
-       })
-});
+
+let container = document.querySelector("#container")
+
+container.addEventListener("click", e=>{
+       if(e.target.id === "delete"){
+              e.target.parentElement.remove();
+       }
+       
+       if(e.target.id === "done"){
+              e.target.parentElement.style.backgroundColor = "green";
+              e.target.style.display = "none"
+       }
+})
 
 
-const addDeleteEvents =()=> deleteButtons.forEach(button => {
-       button.addEventListener("click", () => {
-              par = button.parentElement
-              par.style.display = "none";
-       })
-});
 
 
 addButton.addEventListener("click", () => {
@@ -39,10 +39,6 @@ addButton.addEventListener("click", () => {
               
               document.querySelector("#taskName").value = ""
               document.querySelector("#container").innerHTML += html
-              doneButtons = document.querySelectorAll("#done")
-              deleteButtons = document.querySelectorAll("#delete")
-              addDoneEvents()
-              addDeleteEvents()
        }
 })
 
