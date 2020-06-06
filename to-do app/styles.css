@@ -1,0 +1,29 @@
+.jumbotron{
+    background-color: rgb(124, 24, 124);
+}
+
+.todo-item{
+    background-color: rgb(124, 24, 124);
+    color: white;
+    padding: 2% 5%;
+    border-radius: 30px;
+}
+
+
+
+.icon{
+    cursor: default;
+    transition: 0.5s;
+    padding: 0 1%;
+}
+
+.icon:hover{
+    color: black;
+}
+
+.message{
+    cursor: default;
+    font-size: x-large;
+    padding-left: 2%;
+    display: inline-block;
+}
