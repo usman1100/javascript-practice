@@ -1,0 +1,17 @@
+body{
+    background: linear-gradient(to right, red, yellow);
+}
+
+.message{
+    font-size: 44px;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+hr{
+    width: 50%;
+}
+
+.container{
+    text-align: center;
+}
