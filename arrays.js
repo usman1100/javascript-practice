@@ -31,7 +31,30 @@ let misc = utensils.concat(tools)
 
 // Include
 // Returns if array contains the item or not
-let contains = utensils.includes("small plate")
+// Can also specify which index to start the search
+let contains = utensils.includes("small plate") // true
+contains = utensils.includes("bowl", 3) // false, even though "bowl" is in the array
 
+
+// indexOf
+// Returns index of item in the array, returns -1 if item not found
+// Can also specify which index to start the search
+let index = tools.indexOf("hammer") // 4
+
+// Reverse
+// Permanently reverses the array
+// utensils.reverse()
+
+// Join
+// Joins all elements of array into a string. why?
+let joined = tools.join("-")
+
+
+// Slice
+// Returns sub arrays
+
+tools.slice(0, 3) // From first to second thrid element
+tools.slice(-4, -1) // From fourth last to last element
+tools.slice(4) // From fourth to last element
 
 
