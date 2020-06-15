@@ -57,4 +57,17 @@ tools.slice(0, 3) // From first to second thrid element
 tools.slice(-4, -1) // From fourth last to last element
 tools.slice(4) // From fourth to last element
 
+// 
 
+let nums = [1, 2, 3, 4, 5, 6]
+let total = nums.reduce((sum, num)=>{
+    sum += num
+    return sum
+}, 0)
+
+let max = nums.reduce((curr, max)=>{
+    if(curr > max) return curr
+    return max      
+})
+
+console.log(max)
