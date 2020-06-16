@@ -57,7 +57,7 @@ tools.slice(0, 3) // From first to second thrid element
 tools.slice(-4, -1) // From fourth last to last element
 tools.slice(4) // From fourth to last element
 
-// 
+// Reduce
 
 let nums = [1, 2, 3, 4, 5, 6]
 let total = nums.reduce((sum, num)=>{
@@ -70,4 +70,14 @@ let max = nums.reduce((curr, max)=>{
     return max      
 })
 
-console.log(max)
+
+// Practice
+
+let populate = (func, n) =>{
+    let temp = []
+    for(let i=1; i<=n; i++) 
+        temp.push(func(i))
+
+    return temp;
+}
+let arr = populate(i=>i**3, 10).filter((e)=>e<100).join("-").split("-").map(e=> parseInt(e)) // Really stupid line
