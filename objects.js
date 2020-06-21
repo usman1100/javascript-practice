@@ -33,13 +33,13 @@ let box =
 let boxes = 
 [
     {
-        heigth:2, 
+        height:2, 
         width:5, 
         color: "red"
     },
     
     {
-        heigth:1, 
+        height:1, 
         width:6, 
         color: "blue"
     }
