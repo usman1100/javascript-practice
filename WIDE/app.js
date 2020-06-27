@@ -17,11 +17,21 @@ function isPalindrome(str) {
 let text = document.querySelector("#data").value;
 let button = document.querySelector("#check");
 let display = document.querySelector("#display");
+let clear = document.querySelector("#clear");
 
 button.addEventListener("click", () => {
   text = document.querySelector("#data").value;
 
-  if (text.length < 1) console.log(text.length);
-  else if (isPalindrome(text)) display.innerText = `${text}  is a palindrome!`;
-  else display.innerText = `${text}  is not a palindrome!`;
+  if (text.length < 1) 
+    alert("Enter Something")
+
+  else if (isPalindrome(text)) 
+    display.innerHTML = `<strong>${text}</strong>  is a palindrome!`;
+  else 
+    display.innerHTML = `<strong>${text}</strong>  is not a palindrome!`;
 });
+
+
+
+
+clear.addEventListener("click", ()=> document.querySelector("#data").value="")

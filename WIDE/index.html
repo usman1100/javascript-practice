@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -52,24 +53,31 @@
         <h1 class="display-4">Enter your text here</h1>
         <div class="form-group">
           <label for=""></label>
-          <textarea class="form-control my-4" name="" id="data" rows="3"></textarea>
+          <textarea
+            class="form-control my-4"
+            name=""
+            id="data"
+            rows="3"
+          ></textarea>
 
           <button type="submit" class="btn btn-primary" id="check">
             Check Palindrome
           </button>
 
-          <h1 class="display-4 my-5" id="display"></h1>
-
-
+          <a name="" id="clear" class="btn btn-success text-light">
+            Clear
+          </a>
         </div>
+
+        <h1 class="display-4 my-5" id="display"></h1>
       </div>
       <!-- Checking End -->
 
+      
 
 
 
 
-    </div>
   </body>
   <script src="app.js"></script>
 </html>
