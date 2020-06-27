@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W  I  D  E</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W I D E</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Introduction Starts -->
+      <div class="jumbotron-fluid">
+        <h1 class="display-3">Palindrome Checker</h1>
+        <p class="lead">
+          A palindrome is a word, number, phrase, or other sequence of
+          characters which reads the same backward as forward, such as madam,
+          racecar. There are also numeric palindromes, including date/time
+          stamps using short digits 11/11/11 11:11 and long digits 02/02/2020.
+          Sentence-length palindromes may be written when allowances are made
+          for adjustments to capital letters, punctuation, and word dividers,
+          such as "A man, a plan, a canal, Panama!". For more info, check out
+          this
+          <a href="https://en.wikipedia.org/wiki/Palindrome" target="_blank">
+            Wiki
+          </a>
+        </p>
+        <hr class="my-2" />
+      </div>
+      <!-- Introduction Ends -->
+
+      <!-- Checking Start -->
+      <div class="container">
+        <h1 class="display-4">Enter your text here</h1>
+        <div class="form-group">
+          <label for=""></label>
+          <textarea class="form-control my-4" name="" id="data" rows="3"></textarea>
+
+          <button type="submit" class="btn btn-primary" id="check">
+            Check Palindrome
+          </button>
+
+          <h1 class="display-4 my-5" id="display"></h1>
+
+
+        </div>
+      </div>
+      <!-- Checking End -->
+
+
+
+
+
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
