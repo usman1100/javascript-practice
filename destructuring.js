@@ -33,10 +33,10 @@ const charizard = {
 // This only works if the variable names match the keys' names
 let {hp, spe} = charizard;
 
-// Giviing an unknown variable name will just set it to undefined
+// Giving an unknown variable name will just set it to undefined
 // let {hp, name} = charizard "name" here is undefined
 
-// To use a varible name of that doesn't match
+// To use a variable name of that doesn't match
 // Use this syntax
 // let {keyName: newName} = obj
 
@@ -57,7 +57,7 @@ let statSum = ({hp, atk, def}) => hp+atk+def;
 
 let sum = statSum(charizard)
 
-// Another Exapmle
+// Another Example
 
 let http_request = {
     code: 404,
@@ -67,6 +67,13 @@ let http_request = {
 
 let parseRequest = ({code, type, IP}) => console.log(`Request ${code} of ${type} type from ${IP}`)
 
+// Creating variables with the object properties
 
+let {
+    code: new_code,
+    type: new_type,
+    IP: new_IP
+
+} = newRequest;
 
 
