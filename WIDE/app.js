@@ -14,22 +14,26 @@ function isPalindrome(str) {
   return true;
 }
 
+let textArea = document.querySelector("#data");
 let text = document.querySelector("#data").value;
 let button = document.querySelector("#check");
 let display = document.querySelector("#display");
 let clear = document.querySelector("#clear");
 
-button.addEventListener("click", () => {
+
+let checkPalindrome = () => {
   text = document.querySelector("#data").value;
 
   if (text.length < 1) 
     alert("Enter Something")
 
-  else if (isPalindrome(text)) 
+  else if (isPalindrome(text.toLowerCase())) 
     display.innerHTML = `<strong>${text}</strong>  is a palindrome!`;
   else 
     display.innerHTML = `<strong>${text}</strong>  is not a palindrome!`;
-});
+}
+
+button.addEventListener("click", checkPalindrome);
 
 
 
