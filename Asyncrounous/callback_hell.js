@@ -16,15 +16,15 @@ const makeRequest = (callback) => {
 
 makeRequest((err, data) => {
 
-    if(err) console.log(err)
+    if (err) console.log(err)
     console.log(data);
     makeRequest((err, data) => {
 
-        if(err) console.log(err)
+        if (err) console.log(err)
         console.log(data);
         makeRequest((err, data) => {
-            
-            if(err) console.log(err)
+
+            if (err) console.log(err)
             console.log(data);
         })
     })
